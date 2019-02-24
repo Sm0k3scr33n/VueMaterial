@@ -1,6 +1,8 @@
 "use strict"
 
-Vue.use(VueMaterial.default);
+Vue.use(VueMaterial.default); 
+
+
 
 var navbar = {
   name: "PersistentMini",

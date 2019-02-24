@@ -1,5 +1,6 @@
 using System;
 
+
 namespace VueMaterial.Models
 {
     public class ErrorViewModel

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -11,6 +11,7 @@ namespace VueMaterial.Controllers
     public class HomeController : Controller
     {
         public IActionResult Index()
+
         {
             return View();
         }
