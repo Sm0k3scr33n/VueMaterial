@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - VueMaterial</title>
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Material+Icons">
+
+
+    <!--Includes-->
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/vuematerial/css/css.css" />
+    </environment>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/vuematerial/css/vue-material.css" />
+    </environment>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/vuematerial/css/default.css" />
+    </environment>
+
+
+
+
+
+
+    <!--Excludes-->
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css"
+              asp-fallback-href="~/lib/vuematerial/css/vue-material.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"
+              crossorigin="anonymous" />
+    </environment>
+
+
+
+
+
+    <link rel="stylesheet" href="~/css/site.css" />
+
+
+
+</head>
+<body>
+    <header></header>
+
+    <div id="app">
+        <div class="page-container">
+            <md-app md-mode="reveal">
+                <md-app-toolbar class="md-primary">
+                    <md-button class="md-icon-button" @@click="menuVisible = !menuVisible">
+                        <md-icon>menu</md-icon>
+                    </md-button>
+                    <span class="md-title">My Title</span>
+                </md-app-toolbar>
+
+                <md-app-drawer :md-active.sync="menuVisible">
+                    <md-toolbar class="md-transparent" md-elevation="0">Navigation</md-toolbar>
+
+                    <md-list>
+                        <md-list-item>
+                            <md-icon>move_to_inbox</md-icon>
+                            <span class="md-list-item-text">Inbox</span>
+                        </md-list-item>
+
+                        <md-list-item>
+                            <md-icon>send</md-icon>
+                            <span class="md-list-item-text">Sent Mail</span>
+                        </md-list-item>
+
+                        <md-list-item>
+                            <md-icon>delete</md-icon>
+                            <span class="md-list-item-text">Trash</span>
+                        </md-list-item>
+
+                        <md-list-item>
+                            <md-icon>error</md-icon>
+                            <span class="md-list-item-text">Spam</span>
+                        </md-list-item>
+                    </md-list>
+                </md-app-drawer>
+
+                <md-app-content>
+                    <h1>you could put some content here</h1>
+                    <main role="main" class="pb-3">
+                        @RenderBody()
+                    </main>
+                    @*<div class="container">
+                        <partial name="_CookieConsentPartial" />
+
+                    </div>*@
+
+
+                </md-app-content>
+            </md-app>
+        </div>
+
+    </div>
+
+
+
+
+
+    @*<footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2019 - VueMaterial - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>*@
+
+    <!--JS Includes-->
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+    </environment>
+    <environment include="Development">
+        <script src="~/lib/vuematerial/js/vue.js"></script>
+    </environment>
+    <environment include="Development">
+        <script src="~/lib/vuematerial/js/vue-material.js"></script>
+    </environment>
+
+
+
+    <!--JS Excludes-->
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/vue"
+                asp-fallback-src="~/lib/vuematerial/js/vue.min.js"
+                crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/vue-material@beta"
+                asp-fallback-src="~/lib/vuematerial/js/vue-material.min.js"
+                crossorigin="anonymous"></script>
+    </environment>
+
+
+
+
+    @*<script src='https://unpkg.com/vue'></script>
+        <script src='https://unpkg.com/vue-material@beta'></script>*@
+
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+    <script type="text/javascript">
+
+        </script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

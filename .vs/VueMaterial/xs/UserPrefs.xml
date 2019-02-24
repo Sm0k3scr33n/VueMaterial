@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{4004F887-BFA4-4B73-A7A7-A66F8B5E45B5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="wwwroot/js/site.js">
+    <Files>
+      <File FileName="Views/Home/Index.cshtml" Line="5" Column="1" />
+      <File FileName="Views/Home/Privacy.cshtml" Line="7" Column="1" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="107" Column="16" />
+      <File FileName="wwwroot/css/site.css" Line="37" Column="15" />
+      <File FileName="wwwroot/js/site.js" Line="27" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="VueMaterial" expanded="True">
+            <Node name="VueMaterial" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+                <Node name="js" expanded="True">
+                  <Node name="site.js" selected="True" />
+                </Node>
+                <Node name="vue" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.VueMaterial PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
