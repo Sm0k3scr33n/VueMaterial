@@ -4,7 +4,7 @@ Vue.use(VueMaterial.default);
 
 var navbar = {
   name: "PersistentMini",
-  data: function data() {
+  data: function data() {  
     return {
       menuVisible: false
     }
@@ -19,3 +19,4 @@ var navbar = {
 var app = new Vue(navbar);
 
 app.$mount("#app")       ;
+ 
