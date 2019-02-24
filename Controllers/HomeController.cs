@@ -8,6 +8,7 @@ using VueMaterial.Models;
 
 namespace VueMaterial.Controllers
 {
+
     public class HomeController : Controller
     {
         public IActionResult Index()

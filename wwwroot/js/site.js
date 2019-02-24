@@ -3,7 +3,6 @@
 Vue.use(VueMaterial.default); 
 
 
-
 var navbar = {
   name: "PersistentMini",
   data: function data() {  
