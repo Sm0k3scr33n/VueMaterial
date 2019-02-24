@@ -7,6 +7,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 
+
 namespace VueMaterial.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
